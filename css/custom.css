@@ -1,0 +1,31 @@
+
+.question-btn {
+    height: 30vh;
+	text-align: center;
+}
+
+.answer-btn {
+	height: 17vh;
+	text-align: center;
+}
+
+.header-rect {
+	height: 8vh;
+	width: 15vw;
+	
+}
+
+.header-text {
+	height: 8vh;
+	width: 55vw;
+	text-align: center;
+	line-height: 10vh;
+	vertical-align: center;
+}
+
+.footer-rect {
+	height: 3vh;
+	width: 95vw;
+	margin:auto;
+
+}
