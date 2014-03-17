@@ -10,22 +10,25 @@
 }
 
 .header-rect {
-	height: 8vh;
-	width: 15vw;
+	display:inline-block;
+	height: 8vh; 
+	width: 15vw; 
 	
 }
 
 .header-text {
-	height: 8vh;
-	width: 55vw;
+	display:inline-block;
+/* 	height: 8vh;
+	width: 55vw; */
 	text-align: center;
-	line-height: 10vh;
-	vertical-align: center;
+	/* line-height: 10vh;
+	vertical-align: center; */
 }
 
 .footer-rect {
 	height: 3vh;
-	width: 95vw;
-	margin:auto;
+	width: 100vw;
+	/* margin: auto; */
+
 
 }
