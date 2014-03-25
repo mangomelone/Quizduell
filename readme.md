@@ -61,68 +61,69 @@ So far we don't have a broad understanding of the server API and therefore this 
 *Expects*: GET Request
 
 *Returns:*
-```{
-  "id": 26,
-  "user1": {
-    "name": "ben"
-  },
-  "user2": {
-    "name": "ben2"
-  },
-  "questions": [
+
     {
-      "question": {
-        "question": "test2",
-        "answer": [
-          "1",
-          "2",
-          "3",
-          "4"
-        ],
-        "correctAnswer": 2
-      }
-    },
-    {
-      "question": {
-        "question": "test0",
-        "answer": [
-          "1",
-          "2",
-          "3",
-          "4"
-        ],
-        "correctAnswer": 0
-      }
-    },
-    {
-      "question": {
-        "question": "test3",
-        "answer": [
-          "1",
-          "2",
-          "3",
-          "4"
-        ],
-        "correctAnswer": 3
-      }
-    },
-    {
-      "question": {
-        "question": "test1",
-        "answer": [
-          "1",
-          "2",
-          "3",
-          "4"
-        ],
-        "correctAnswer": 1
-      }
+      "id": 26,
+          "user1": {
+           "name": "ben"
+      },
+      "user2": {
+        "name": "ben2"
+      },
+      "questions": [
+        {
+          "question": {
+            "question": "test2",
+            "answer": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "correctAnswer": 2
+          }
+        },
+        {
+          "question": {
+            "question": "test0",
+            "answer": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "correctAnswer": 0
+          }
+        },
+        {
+          "question": {
+            "question": "test3",
+            "answer": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "correctAnswer": 3
+          }
+        },
+        {
+          "question": {
+            "question": "test1",
+            "answer": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "correctAnswer": 1
+          }
+        }
+      ],
+      "score1": -1,
+      "score2": -1,
+      "startTime": 1395735988698
     }
-  ],
-  "score1": -1,
-  "score2": -1,
-  "startTime": 1395735988698
-}```
 
 ###End game
 
