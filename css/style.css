@@ -20,10 +20,14 @@ h6 {
 
 /* icon design */
 .icon {
-    padding: 0 0em !important;
-    margin: 0.2em 1em !important;
+    padding: 1em 2em !important;
+    margin: 0.3em 1em !important;
 }
 
 .ui-header .ui-title {
     margin: 0 auto !important;
+}
+
+.ui-content {
+    padding: 0.3em;
 }
