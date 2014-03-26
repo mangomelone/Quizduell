@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quizionaire</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body id="body">
+
+<div data-role="page">
+    <!-- Header -->
+    <div id="header" data-role="header">
+        <h1>Game against John Doe</h1>
+    </div>
+
+    <!-- Main content area -->
+    <div id="main" role="main" class="ui-content">
+       <div id="grid" class="ui-grid-a" style="position:relative; height: 100%;">
+           <button id="questionButton" class="ui-btn ui-btn-a">Where is Waldo?</button>
+           <div id="blockA" class="ui-block-a block">
+               <button id="answerA" href="" class="ui-btn ui-corner-all ui-shadow answer">Answer A</button>
+               <button id="answerC" href="" class="ui-btn ui-corner-all ui-shadow answer">Answer C</button>
+           </div>
+           <div id="blockB" class="ui-block-b block">
+               <button id="answerB" href="" class="ui-btn ui-corner-all ui-shadow answer">Answer B</button>
+               <button id="answerD" href="" class="ui-btn ui-corner-all ui-shadow answer">Answer D</button>
+           </div>
+       </div>
+    </div>
+
+    <!-- Footer containing navigation -->
+    <div id="footer" data-role="footer" data-position="fixed">
+       <h6>
+            <a href="#" class="ui-btn ui-icon-home ui-btn-icon-notext ui-shadow ui-corner-all icon"></a>
+            <a href="#" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-shadow ui-corner-all icon"></a>
+            <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all icon"></a>
+        </h6>
+    </div>
+
+    <script src="js/rescale.js"></script>
+</div>
+
+</body>
+</html>
