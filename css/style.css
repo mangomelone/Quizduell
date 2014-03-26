@@ -1,0 +1,29 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+/* scale up button container */
+.ui-input-btn {
+    height:100%;
+}
+
+/* set padding for answer buttons */
+.block {
+    padding: 5px;
+}
+
+/* container for icons */
+h6 {
+    padding: 0px !important;
+}
+
+/* icon design */
+.icon {
+    padding: 0 0em !important;
+    margin: 0.2em 1em !important;
+}
+
+.ui-header .ui-title {
+    margin: 0 auto !important;
+}

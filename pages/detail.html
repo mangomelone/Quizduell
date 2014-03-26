@@ -6,24 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Quizionaire</title>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-    <style>
-
-        /* apply a natural box layout model to all elements */
-        *, *:before, *:after {
-            -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-        }
-
-        .ui-input-btn {
-            height:100%;
-        }
-
-        .block {
-            padding: 5px;
-        }
-
-    </style>
 </head>
 <body id="body">
 
@@ -50,40 +35,14 @@
 
     <!-- Footer containing navigation -->
     <div id="footer" data-role="footer" data-position="fixed">
-        <h2>
-            <a href="#" class="ui-btn ui-icon-home ui-btn-icon-notext ui-shadow ui-corner-all"></a>
-            <a href="#" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-shadow ui-corner-all"></a>
-            <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all"></a>
-        </h2>
+       <h6>
+            <a href="#" class="ui-btn ui-icon-home ui-btn-icon-notext ui-shadow ui-corner-all icon"></a>
+            <a href="#" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-shadow ui-corner-all icon"></a>
+            <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all icon"></a>
+        </h6>
     </div>
 
-    <script>
-
-        // Rescale single elements on screen. Maybe split it up into two functions
-        function rescaleLayout() {
-            $('#main').css('height', $(window).height() - $('#header').height() - $('#footer').height() - 8);
-            $('#grid').css('height', $('#main').height());
-            $('#questionButton').css('height', $('#grid').height() / 3);
-            $('#blockA').css('height', $('#grid').height() * (2/3));
-            $('#blockB').css('height', $('#grid').height() * (2/3));
-            $('#answerA').css('height', ($('#blockA').height() / 2) -18);
-            $('#answerB').css('height', ($('#blockB').height() / 2) -18);
-            $('#answerC').css('height', ($('#blockA').height() / 2) -18);
-            $('#answerD').css('height', ($('#blockB').height() / 2) -18);
-        }
-
-        // Rescale layout when document is ready
-        $( document ).ready(function() {
-            rescaleLayout();
-        });
-
-        // Rescale layout on resize of window element. Actually not really needed for cordova app
-        $(window).resize(function() {
-            rescaleLayout();
-        });
-
-    </script>
-
+    <script src="../scripts/rescale.js"></script>
 </div>
 
 </body>
